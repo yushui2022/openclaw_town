@@ -1,0 +1,17 @@
+# Ignore everything by default to avoid sending huge legacy history into build context.
+*
+
+# Keep container build files.
+!Dockerfile
+!docker-compose.yml
+!.dockerignore
+
+# Keep OpenTown runtime code.
+!opentown/
+!opentown/**
+
+# Keep only required Stanford-town visual assets.
+!environment/
+!environment/frontend_server/
+!environment/frontend_server/static_dirs/
+!environment/frontend_server/static_dirs/**
